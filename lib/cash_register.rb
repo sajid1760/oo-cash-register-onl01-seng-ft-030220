@@ -3,6 +3,7 @@ class CashRegister
   @total = 0  
   @discount = 0 
   @items = []
+  @totalarray = []
   
   def initialize(discount = 0)
     @total = 0 
@@ -15,6 +16,7 @@ class CashRegister
   
   def add_item(item, price, quantity = 1)
     @items << item
+    @totalarray << @total
     @total = @total + price * quantity
   end
   
@@ -26,6 +28,12 @@ class CashRegister
   
   def items
     @items
+  end
+  
+  def void_last_transaction
+    @items.pop
+    @total = @totalarray.last 
+    @total.pop
   end
   
 end
