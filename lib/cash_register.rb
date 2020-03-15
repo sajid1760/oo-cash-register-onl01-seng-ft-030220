@@ -2,8 +2,8 @@ class CashRegister
   
   @total = 0  
   @discount = 0 
-  @items = ["item"]
-  @totalarray = [0]
+  @items = []
+  @totalarray = []
   
   def initialize(discount = 0)
     @total = 0 
