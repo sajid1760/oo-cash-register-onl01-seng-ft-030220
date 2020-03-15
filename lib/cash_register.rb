@@ -17,7 +17,7 @@ class CashRegister
   def add_item(item, price, quantity = 1)
     @items =[]
     @items.push(item) 
-    @totalarray = [] 
+    
     @totalarray << total
     @total = @total + price * quantity
   end
