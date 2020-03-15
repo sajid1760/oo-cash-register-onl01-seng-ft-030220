@@ -18,7 +18,7 @@ class CashRegister
     @items =["true"]
     @items.push(item) 
     total = @total
-    @totalarray.push(@total) 
+    @totalarray.push(total) 
     @total = @total + price * quantity
   end
   
