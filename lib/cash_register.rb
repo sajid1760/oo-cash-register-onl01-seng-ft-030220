@@ -17,7 +17,8 @@ class CashRegister
   def add_item(item, price, quantity = 1)
     @items =["true"]
     @items.push(item) 
-    @totalarray.push(@total)
+    total = @total
+    @totalarray.push(@total) 
     @total = @total + price * quantity
   end
   
