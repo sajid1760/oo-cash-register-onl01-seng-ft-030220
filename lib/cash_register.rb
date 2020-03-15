@@ -15,6 +15,7 @@ class CashRegister
   end
   
   def add_item(item, price, quantity = 1)
+    @items =["true"]
     @items.push(item) 
     @totalarray << @total
     @total = @total + price * quantity
@@ -43,7 +44,7 @@ end
 
 cashregister = CashRegister.new 
 cashregister_with_discount = CashRegister.new(20)
-cashregister.add_item("muffinss","1.28",3)
+cashregister.add_item("boob",1.28,3)
 puts cashregister.total
 cashregister.apply_discount
 
