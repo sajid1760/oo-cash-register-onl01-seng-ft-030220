@@ -3,7 +3,7 @@ class CashRegister
   @total = 0  
   @discount = 0 
   
-  def initialize(discount)
+  def initialize(discount = 0)
     @total = 0 
     @discount = discount
   end
@@ -17,7 +17,8 @@ class CashRegister
   end
   
   def apply_discount
-    puts "Discount has been successfully added!"
+    if @discount != 0 puts "The discount has been successfully added!"
+    else puts "There is not discount to apply" end
     @total = @total * (1 - 0.01 * discount)
   end
   
