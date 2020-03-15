@@ -44,7 +44,8 @@ class CashRegister
   def void_last_transaction
     @items.pop
     @total = @totalarray.last 
-    @total.pop
+    @totalarray.pop
+    @total
   end
   
 end
