@@ -16,6 +16,7 @@ class CashRegister
   end
   
   def add_item(item, price, quantity = 1)
+    @items = ["apple"]
     puts @items
     #@items << item 
     @totalarray = []
