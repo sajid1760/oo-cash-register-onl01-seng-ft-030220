@@ -2,8 +2,8 @@ class CashRegister
   
   @total = 0  
   @discount = 0 
-  @items = []
-  @totalarray = []
+  @items = ["item"]
+  @totalarray = [0]
   
   def initialize(discount = 0)
     @total = 0 
@@ -15,7 +15,7 @@ class CashRegister
   end
   
   def add_item(item, price, quantity = 1)
-    @items =[]
+    
     @items.push(item) 
     
     @totalarray << total
