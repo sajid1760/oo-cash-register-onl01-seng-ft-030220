@@ -45,9 +45,10 @@ end
 
 cashregister = CashRegister.new 
 cashregister_with_discount = CashRegister.new(20)
-cashregister.add_item("boob",1.28,3)
-puts cashregister.total
+cashregister_with_discount.add_item("boob",1.28,3)
+puts cashregister_with_discount.total
 cashregister.apply_discount
+puts cashregister_with_discount.total
 
 
 
