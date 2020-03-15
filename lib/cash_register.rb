@@ -40,3 +40,8 @@ class CashRegister
   end
   
 end
+
+cashregister = CashRegister.new 
+cashregister_with_discount = CashRegister.new(20)
+
+
