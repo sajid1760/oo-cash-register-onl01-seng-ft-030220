@@ -29,12 +29,12 @@ class CashRegister
   end
   
   def apply_discount
+    @total = @total * (1 - 0.01 * @discount)
     if @discount != 0 then 
-      puts "The discount has been successfully added!"
+      "After the discount, the total comes to #{@total}"
     else 
       puts "There is no discount to apply" 
     end
-    @total = @total * (1 - 0.01 * @discount)
   end
   
   def items
