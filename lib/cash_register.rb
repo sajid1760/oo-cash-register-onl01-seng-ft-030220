@@ -26,7 +26,7 @@ class CashRegister
     if @discount != 0 then 
       puts "The discount has been successfully added!"
     else 
-      puts "There is not discount to apply" 
+      puts "There is no discount to apply" 
     end
     @total = @total * (1 - 0.01 * discount)
   end
