@@ -14,6 +14,10 @@ class CashRegister
     @totalarray = []
   end
   
+  def discount
+    @discount
+  end
+  
   def total
     @total
   end
