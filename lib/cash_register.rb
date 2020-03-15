@@ -3,6 +3,7 @@ class CashRegister
   @total = 0  
   @discount = 0 
   @items = ["apple"]
+  @arr = []
   @totalarray = []
   
   def initialize(discount = 0)
@@ -17,7 +18,7 @@ class CashRegister
   
   def add_item(item, price, quantity = 1)
     #@items = ["apple"]
-    puts @items
+    puts @arr
     #@items << item 
     @totalarray = []
     @totalarray << total
