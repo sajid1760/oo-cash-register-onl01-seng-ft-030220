@@ -1,12 +1,7 @@
 class CashRegister
   
-  @total = 0  
-  @discount = 0 
-  @items = []
-  @arr = []
-  @totalarray = []
-  
-  
+  attr_accessor :total
+
   
   def initialize(discount = 0)
     @total = 0 
@@ -18,10 +13,6 @@ class CashRegister
   
   def discount
     @discount
-  end
-  
-  def total
-    @total
   end
   
   def add_item(item, price, quantity = 1)
