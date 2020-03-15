@@ -15,9 +15,9 @@ class CashRegister
   end
   
   def add_item(item, price, quantity = 1)
-    @items =["true"]
+    @items =[]
     @items.push(item) 
-    @totalarray = [0] 
+    @totalarray = [] 
     @totalarray << total
     @total = @total + price * quantity
   end
@@ -28,7 +28,7 @@ class CashRegister
     else 
       puts "There is no discount to apply" 
     end
-    @total = @total * (1 - 0.01 * discount)
+    @total = @total * (1 - 0.01 * @discount)
   end
   
   def items
