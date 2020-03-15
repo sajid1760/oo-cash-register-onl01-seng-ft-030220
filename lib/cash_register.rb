@@ -10,7 +10,7 @@ class CashRegister
     @total = 0 
     @discount = discount
     #puts @discount
-    @items = ["apple"]
+    @items = []
     @totalarray = []
   end
   
@@ -19,10 +19,7 @@ class CashRegister
   end
   
   def add_item(item, price, quantity = 1)
-    #@items = ["apple"]
-    puts @items
-    #@items << item 
-    @totalarray = []
+    @items << item 
     @totalarray << total
     @total = @total + price * quantity
   end
